@@ -8,33 +8,52 @@
 	<meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Plus de perte de temps à consulter la carte! Notre concept permet aux	utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les	restaurants car leur menu est préparé à l’avance." />
 	<link rel="icon" type="image/x-icon" href="assets/images/logo/ohmyfood@2x.svg" />
 	<!-- <link rel="stylesheet" href="style.css"> -->
-        <script src="https://kit.fontawesome.com/af00583391.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/dev.css">
 
 	<script src="https://kit.fontawesome.com/af00583391.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="--spinner">
+	<!-- <button>ok</button> -->
+	<!--header class="ok">okok
+		<p>ppp</p>
+		<button class='test'>ouioui</button>
+	</header>
+	<main class="ok">okokokokokokoko
+		<p>pé&déééééééééééé!</p>
+		<button>okok</button>
+	</main-->
+
+
+
+	<!-- TESTES -->
+
+
+
+
 	<!-- header.H>img.H__logo[alt="logo" src="assets/images/logo/ohmyfood.png"]+button.H__mobileExitButton>i.fontawesomeMap -->
-	<header class="H">
-		<img src="assets/images/logo/ohmyfood.png" alt="logo" class="H__logo">
+	<header class="headerBar">
+		<img class="headerBar__logo" src="assets/images/logo/ohmyfood.png" alt="logo">
 		<!-- CE BUTTON NE S'AFFICHEQUE DANS LES MENUS--------------
-			<button class="H__goBack mob">
+		<button class="headerBar__goBack">
 			<i class="fontawesomeExit"></i>
 		</button> -->
 	</header>
+
+	
+	
 	<!-- nav> -->
-	<nav class="N">
-		<!-- form.N__lieu>input[readonly="true"]{Paris, Belleville}+i.fontawesomeMap -->
-		<form action="#" class="N__lieu">
-			<input type="text" readonly="true">Paris, Belleville</input>
-			<i class="fontawesomeMap"></i>
+	<nav class="jumbotron">
+		<!-- form.jumbotron__lieu>input[readonly="true"]{Paris, Belleville}+i.fontawesomeMap -->
+		<form action="#" class="jumbotron__map">
+			<input class="--dev" type="text" readonly="true" value="Paris, Belleville" />
+			<!-- <i class="fontawesomeMap"></i> -->
 		</form>
-		<!-- h1.N__logo{Réservez le menu qui vous convient} -->
-		<h1 class="N__slogan">Réservez le menu qui vous convient</h1>
-		<!-- h2.N__slogan{Découvrez des restaurants d'exception, sélectionnés par nos soins} -->
-		<h2 class="N__slogan_">Découvrez des restaurants d'exception, sélectionnés par nos soins</h2>
-		<!-- button.N__exploreButton>span{Explorer nos restaurants} -->
-		<button class="N__exploreButton">
+		<h1 class="jumbotron__slogan">Réservez le menu qui vous convient</h1>
+		<!-- h1.jumbotron__logo{Réservez le menu qui vous convient} -->
+		<!-- h2.jumbotron__slogan{Découvrez des restaurants d'exception, sélectionnés par nos soins} -->
+		<h2 class="jumbotron__slogan2">Découvrez des restaurants d'exception, sélectionnés par nos soins</h2>
+		<!-- button.jumbotron__exploreButton>span{Explorer nos restaurants} -->
+		<button class="jumbotron__explorerButton">
 			<span>Explorer nos restaurants</span>
 		</button>
 	</nav>
@@ -42,44 +61,56 @@
 	
 	
 	<!-- main.M>section.M__fonctionnement>h3{Fonctionnement}+ul>(li>i.fontawesomeIcones+span{Choisissez un restaurant})*3 -->
-	<main class="M">
-		<section class="M__fonctionnement">
-			<h3>Fonctionnement</h3>
-			<ul>
+	<main>
+		<section class="listSteps">
+			<h3 class="listSteps__titre">Fonctionnement</h3>
+			<ul class="listSteps__list --numeros safe">
 				<li>
-					<i class="fontawesomeIcones"></i>
+					<i class="fas fa-mobile-alt"></i>
 					<span>Choisissez un restaurant</span>
 				</li>
 				<li>
-					<i class="fontawesomeIcones"></i>
-					<span>Choisissez un restaurant</span>
+					<i class="fas fa-list-ul"></i>
+					<span>Composez votre menu</span>
 				</li>
 				<li>
-					<i class="fontawesomeIcones"></i>
-					<span>Choisissez un restaurant</span>
+					<i class="fas fa-store"></i>
+					<span>Dégustez au restaurant</span>
 				</li>
 			</ul>
 		</section>
 
-		<!-- article.M__listeMenus>h3{Restaurants}+(figure>img[src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"]+figcaption{La palette du goût}+a[href="menu-$"]{Ménilmontant}+i.fontawesomeCoeur)*4 -->
-		<article class="M__listeMenus">
-			<h3>Restaurants</h3>
-			<figure>
-				<img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-				<figcaption>La palette du goût</figcaption>
-				<a href="menu-1">Ménilmontant</a><i class="fontawesomeCoeur"></i></figure>
-			<figure>
-				<img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-				<figcaption>La palette du goût</figcaption>
-				<a href="menu-2">Ménilmontant</a><i class="fontawesomeCoeur"></i></figure>
-			<figure>
-				<img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-				<figcaption>La palette du goût</figcaption>
-				<a href="menu-3">Ménilmontant</a><i class="fontawesomeCoeur"></i></figure>
-			<figure>
-				<img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-				<figcaption>La palette du goût</figcaption>
-				<a href="menu-4">Ménilmontant</a><i class="fontawesomeCoeur"></i></figure>
+		<!-- article.listMenus--ACCUEIL>h3.listMenus__titre{Restaurants}+(figure.listMenus__card>img.listMenus__img[src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"]+figcaption.listMenus__figcaption{La palette du goût}>(a[href="#menu-$"]{Ménilmontant}+i.fontawesomeCoeur))*4 -->
+		<article class="listMenus --ACCUEIL">
+			<h3 class="listMenus__titre">Restaurants</h3>
+			<figure class="listMenus__card --new">
+				<img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="listMenus__img">
+				<figcaption class="listMenus__figcaption">La palette du goût
+					<a href="la-note-enchantee.html">Ménilmontant</a>
+					<i class="fontawesomeCoeur"></i>
+				</figcaption>
+			</figure>
+			<figure class="listMenus__card --new">
+				<img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="listMenus__img">
+				<figcaption class="listMenus__figcaption">La palette du goût
+					<a href="#menu-2">Ménilmontant</a>
+					<i class="fontawesomeCoeur"></i>
+				</figcaption>
+			</figure>
+			<figure class="listMenus__card --new">
+				<img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="listMenus__img">
+				<figcaption class="listMenus__figcaption">La palette du goût
+					<a href="#menu-3">Ménilmontant</a>
+					<i class="fontawesomeCoeur"></i>
+				</figcaption>
+			</figure>
+			<figure class="listMenus__card --new">
+				<img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="listMenus__img">
+				<figcaption class="listMenus__figcaption">La palette du goût
+					<a href="#menu-4">Ménilmontant</a>
+					<i class="fontawesomeCoeur"></i>
+				</figcaption>
+			</figure>
 		</article>
 	</main>
 	
@@ -87,23 +118,33 @@
 
 
 	<!-- footer.F>img.F__logo[src="assets/images/logo/ohmyfoogd.png"] -->
-	<footer class="F"><img src="assets/images/logo/ohmyfoogd.png" alt="logo footer" class="F__logo">
-		ul.F__liens>(li>i.fontawesomeServices+a[href="#"]{Proposer un restaurant})*4
-		<ul class="F__liens">
-			<li><i class="fontawesomeServices"></i>
+	<!-- footer.F>p{OhMyFood}.F__logoFooter[src="assets/images/logo/ohmyfoogd.png"] -->
+	<footer class="footer">
+		<!-- <img src="assets/images/logo/ohmyfoogd.png" alt="logo footer" class="footer__logo"> -->
+		<h5 class="footer__logo">ohmyfood</h5>
+		<!-- ul.F__liens>(li>i.fontawesomeServices+a[href="#"]{Proposer un restaurant})*4 -->
+		<ul class="footer__liens">
+			<li>
+				<i class="fontawesomeServices">&#x1F374;</i>
 				<a href="#">Proposer un restaurant</a>
 			</li>
-			<li><i class="fontawesomeServices"></i>
-				<a href="#">Proposer un restaurant</a>
+			<li>
+				<i class="fontawesomeServices">&#x1F91D;</i>
+				<a href="#">Devenir partenaire</a>
 			</li>
-			<li><i class="fontawesomeServices"></i>
-				<a href="#">Proposer un restaurant</a>
+			<li>
+				<a href="#">Mention légales</a>
 			</li>
-			<li><i class="fontawesomeServices"></i>
-				<a href="#">Proposer un restaurant</a>
+			<li>
+				<a href="#">Contact</a>
 			</li>
 		</ul>
 	</footer>
 	
+	<div class = "container-spinner">
+		<div class = "container-spinner__spinner --spin-1"></div>
+		<div class = "container-spinner__spinner --spin-2"></div>
+		<div class = "container-spinner__spinner --spin-3"></div>
+	</div>
 </body>
 </html>
